@@ -7,12 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C51F6271A3AA1030007DF1E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C51F6261A3AA1030007DF1E /* icon.png */; };
+		4C51F6291A3AA5F80007DF1E /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C51F6281A3AA5F80007DF1E /* data.swift */; };
+		4C51F62B1A3AA6180007DF1E /* network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C51F62A1A3AA6180007DF1E /* network.swift */; };
+		4C8CE8661A3A6A6F00377DD2 /* SchismLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8CE8651A3A6A6F00377DD2 /* SchismLib.swift */; };
 		4CD0DA0B1A3A3E3200FCEF43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0DA0A1A3A3E3200FCEF43 /* AppDelegate.swift */; };
 		4CD0DA0D1A3A3E3200FCEF43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0DA0C1A3A3E3200FCEF43 /* ViewController.swift */; };
 		4CD0DA101A3A3E3200FCEF43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD0DA0E1A3A3E3200FCEF43 /* Main.storyboard */; };
 		4CD0DA121A3A3E3200FCEF43 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD0DA111A3A3E3200FCEF43 /* Images.xcassets */; };
 		4CD0DA151A3A3E3200FCEF43 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CD0DA131A3A3E3200FCEF43 /* LaunchScreen.xib */; };
 		4CD0DA211A3A3E3300FCEF43 /* SchismTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0DA201A3A3E3300FCEF43 /* SchismTests.swift */; };
+		4CD0DA2B1A3A55EC00FCEF43 /* ActivesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0DA2A1A3A55EB00FCEF43 /* ActivesViewController.swift */; };
+		4CD0DA2D1A3A560200FCEF43 /* ExpiredsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0DA2C1A3A560200FCEF43 /* ExpiredsViewController.swift */; };
+		4CD0DA2F1A3A561500FCEF43 /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0DA2E1A3A561500FCEF43 /* StatsViewController.swift */; };
+		4CD0DA311A3A562E00FCEF43 /* NewSchismViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0DA301A3A562E00FCEF43 /* NewSchismViewController.swift */; };
+		4CD0DA331A3A563C00FCEF43 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0DA321A3A563C00FCEF43 /* HelpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C51F6261A3AA1030007DF1E /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		4C51F6281A3AA5F80007DF1E /* data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
+		4C51F62A1A3AA6180007DF1E /* network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = network.swift; sourceTree = "<group>"; };
+		4C8CE8651A3A6A6F00377DD2 /* SchismLib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchismLib.swift; sourceTree = "<group>"; };
 		4CD0DA051A3A3E3100FCEF43 /* Schism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Schism.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD0DA091A3A3E3200FCEF43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CD0DA0A1A3A3E3200FCEF43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +49,11 @@
 		4CD0DA1A1A3A3E3300FCEF43 /* SchismTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchismTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD0DA1F1A3A3E3300FCEF43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CD0DA201A3A3E3300FCEF43 /* SchismTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchismTests.swift; sourceTree = "<group>"; };
+		4CD0DA2A1A3A55EB00FCEF43 /* ActivesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivesViewController.swift; sourceTree = "<group>"; };
+		4CD0DA2C1A3A560200FCEF43 /* ExpiredsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpiredsViewController.swift; sourceTree = "<group>"; };
+		4CD0DA2E1A3A561500FCEF43 /* StatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
+		4CD0DA301A3A562E00FCEF43 /* NewSchismViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSchismViewController.swift; sourceTree = "<group>"; };
+		4CD0DA321A3A563C00FCEF43 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C51F6231A3AA0390007DF1E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4C51F6261A3AA1030007DF1E /* icon.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		4CD0D9FC1A3A3E2F00FCEF43 = {
 			isa = PBXGroup;
 			children = (
@@ -78,10 +104,19 @@
 			isa = PBXGroup;
 			children = (
 				4CD0DA0A1A3A3E3200FCEF43 /* AppDelegate.swift */,
+				4C8CE8651A3A6A6F00377DD2 /* SchismLib.swift */,
 				4CD0DA0C1A3A3E3200FCEF43 /* ViewController.swift */,
+				4CD0DA2A1A3A55EB00FCEF43 /* ActivesViewController.swift */,
+				4CD0DA2C1A3A560200FCEF43 /* ExpiredsViewController.swift */,
+				4CD0DA2E1A3A561500FCEF43 /* StatsViewController.swift */,
+				4CD0DA301A3A562E00FCEF43 /* NewSchismViewController.swift */,
+				4CD0DA321A3A563C00FCEF43 /* HelpViewController.swift */,
+				4C51F6281A3AA5F80007DF1E /* data.swift */,
+				4C51F62A1A3AA6180007DF1E /* network.swift */,
 				4CD0DA0E1A3A3E3200FCEF43 /* Main.storyboard */,
 				4CD0DA111A3A3E3200FCEF43 /* Images.xcassets */,
 				4CD0DA131A3A3E3200FCEF43 /* LaunchScreen.xib */,
+				4C51F6231A3AA0390007DF1E /* Images */,
 				4CD0DA081A3A3E3200FCEF43 /* Supporting Files */,
 			);
 			path = Schism;
@@ -192,6 +227,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C51F6271A3AA1030007DF1E /* icon.png in Resources */,
 				4CD0DA101A3A3E3200FCEF43 /* Main.storyboard in Resources */,
 				4CD0DA151A3A3E3200FCEF43 /* LaunchScreen.xib in Resources */,
 				4CD0DA121A3A3E3200FCEF43 /* Images.xcassets in Resources */,
@@ -212,8 +248,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C8CE8661A3A6A6F00377DD2 /* SchismLib.swift in Sources */,
+				4CD0DA331A3A563C00FCEF43 /* HelpViewController.swift in Sources */,
+				4C51F62B1A3AA6180007DF1E /* network.swift in Sources */,
 				4CD0DA0D1A3A3E3200FCEF43 /* ViewController.swift in Sources */,
 				4CD0DA0B1A3A3E3200FCEF43 /* AppDelegate.swift in Sources */,
+				4CD0DA311A3A562E00FCEF43 /* NewSchismViewController.swift in Sources */,
+				4CD0DA2D1A3A560200FCEF43 /* ExpiredsViewController.swift in Sources */,
+				4CD0DA2F1A3A561500FCEF43 /* StatsViewController.swift in Sources */,
+				4C51F6291A3AA5F80007DF1E /* data.swift in Sources */,
+				4CD0DA2B1A3A55EC00FCEF43 /* ActivesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +449,7 @@
 				4CD0DA261A3A3E3300FCEF43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4CD0DA271A3A3E3300FCEF43 /* Build configuration list for PBXNativeTarget "SchismTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +458,7 @@
 				4CD0DA291A3A3E3300FCEF43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

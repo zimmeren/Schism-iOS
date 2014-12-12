@@ -16,6 +16,54 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //set navbar colors
+        var navigationBarAppearace = UINavigationBar.appearance()
+        navigationBarAppearace.tintColor = uicolorFromHex(0xffffff)
+        navigationBarAppearace.barTintColor = uicolorFromHex(0xff9326)
+        
+        //set tabbar colors
+        var tabBarAppearance = UITabBar.appearance()
+        tabBarAppearance.tintColor = uicolorFromHex(0xffffff)
+        tabBarAppearance.barTintColor = uicolorFromHex(0xff9326)
+        
+        //set tabbar text size and color
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.blackColor(), NSFontAttributeName:UIFont(name: "Arial-BoldMT", size: 20)!], forState:.Normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName:UIFont(name: "Arial-BoldMT", size: 20)!], forState:.Selected)
+        
+        //set navbar text size and color
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName:UIFont(name: "Arial-BoldMT", size: 25)!], forState:.Normal)
+        
+        //Get UID from pList or Create one
+        var defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
+        if let uid = defaults.objectForKey("uid") as? Int{
+            println("ID FOUND: \(uid)")
+            data.uid = uid
+        }
+        else{
+            println("not found")
+            if let newUID = network.getUID(){
+                println("new id \(newUID)")
+                defaults.setObject(newUID, forKey: "uid")
+                data.uid = newUID
+            }
+            else{
+                println("error: no network connection")
+            }
+        }
+        
+        //update GPS location
+        var status1: Bool = data.updatePosition()
+        if status1 == false{
+            println("ERROR: GPS Location not updated")
+        }
+        
+        //Get all network data
+        var status2: Bool = data.refresh()
+        if status2 == false{
+            println("ERROR: Data Not Loaded")
+        }
+        
         return true
     }
 

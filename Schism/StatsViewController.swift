@@ -105,9 +105,36 @@ class StatsViewController: UIViewController, CLLocationManagerDelegate {
         if (status == false){
             println("error: cant update network data")
         }
+        else{
+            updateLabels()
+        }
     }
     
-
+    func updateLabels(){
+        totPoints.text = "\(data.stats.num)"
+        wagerPoints.text = "\(data.stats.wagerPoints)"
+        creationPoints.text = "\(data.stats.createPoints)"
+        leftPoints.text = "\(data.stats.lo)"
+        rightPoints.text = "\(data.stats.hi)"
+        leftString.text = "\(data.stats.leftString)"
+        rightString.text = "\(data.stats.rightString)"
+    }
+    
+    //UI CONNECTIONS
+    @IBOutlet weak var totPoints: UILabel!
+    
+    @IBOutlet weak var wagerPoints: UILabel!
+    
+    @IBOutlet weak var creationPoints: UILabel!
+    
+    @IBOutlet weak var leftPoints: UILabel!
+    
+    @IBOutlet weak var leftString: UILabel!
+    
+    @IBOutlet weak var rightPoints: UILabel!
+    
+    @IBOutlet weak var rightString: UILabel!
+    
     /*
     // MARK: - Navigation
 

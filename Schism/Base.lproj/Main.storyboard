@@ -147,39 +147,48 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sch..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="os3-sw-gNG">
-                                <rect key="frame" x="0.0" y="166" width="150" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="...ism" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cxJ-XT-zwl">
+                                <rect key="frame" x="244" y="166" width="115" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="yJ4-5y-cUg"/>
+                                    <constraint firstAttribute="height" constant="30" id="HVI-xg-VBF"/>
+                                    <constraint firstAttribute="width" constant="115" id="pAQ-Ug-z4x"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="...ism" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cxJ-XT-zwl">
-                                <rect key="frame" x="218" y="166" width="150" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="QAu-lM-QkR"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZTa-qe-wEp">
-                                <rect key="frame" x="158" y="248" width="58" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZTa-qe-wEp">
+                                <rect key="frame" x="162" y="251" width="50" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Post">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="postButtonPress:" destination="m1q-QE-1ru" eventType="touchUpInside" id="qA4-id-Z2K"/>
+                                </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sch..." adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="os3-sw-gNG">
+                                <rect key="frame" x="7" y="166" width="115" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="1" green="0.57647058819999997" blue="0.14901960780000001" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="5VG-kG-B8h" secondAttribute="trailing" constant="27" id="VcS-pe-9g1"/>
-                            <constraint firstItem="5VG-kG-B8h" firstAttribute="top" secondItem="nig-ty-6mD" secondAttribute="bottom" constant="29" id="Yqt-hD-56A"/>
-                            <constraint firstItem="5VG-kG-B8h" firstAttribute="leading" secondItem="ser-zi-zAb" secondAttribute="leadingMargin" constant="26" id="urE-UD-b9g"/>
+                            <constraint firstItem="5VG-kG-B8h" firstAttribute="top" secondItem="nig-ty-6mD" secondAttribute="bottom" constant="29" id="HeI-eW-cph"/>
+                            <constraint firstItem="ZTa-qe-wEp" firstAttribute="top" secondItem="nig-ty-6mD" secondAttribute="bottom" constant="187" id="HiI-OC-2Ib"/>
+                            <constraint firstAttribute="centerX" secondItem="ZTa-qe-wEp" secondAttribute="centerX" id="Msv-WG-ixo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cxJ-XT-zwl" secondAttribute="trailing" constant="-8" id="gd8-6H-NK1"/>
+                            <constraint firstItem="5VG-kG-B8h" firstAttribute="leading" secondItem="ser-zi-zAb" secondAttribute="leadingMargin" constant="26" id="lJE-dI-7VV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5VG-kG-B8h" secondAttribute="trailing" constant="27" id="wOe-qV-P7z"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="myLeftTextField" destination="os3-sw-gNG" id="Qb1-Fv-zd9"/>
+                        <outlet property="myRightTextField" destination="cxJ-XT-zwl" id="sCw-Rq-6J9"/>
+                        <outlet property="postButton" destination="ZTa-qe-wEp" id="Q6H-tD-XLo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hvz-TB-gJN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -393,7 +402,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="9lp-eO-HFz"/>
-        <segue reference="Kj3-5y-MDM"/>
+        <segue reference="L7n-OP-vIt"/>
+        <segue reference="voJ-QF-Xds"/>
     </inferredMetricsTieBreakers>
 </document>

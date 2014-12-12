@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import CoreLocation
 
-class ActivesViewController: UIViewController {
+class ActivesViewController: UIViewController, CLLocationManagerDelegate {
+    
+    let locationManager = CLLocationManager()
+    var locationEnabled = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,6 +20,10 @@ class ActivesViewController: UIViewController {
         //add nav bar buttons
         self.addRightNavItemOnView()
         self.addLeftNavItemOnView()
+        
+        //start location services
+        locationEnabled = setupLocationServices()
+        
         // Do any additional setup after loading the view.
     }
 
@@ -44,7 +52,12 @@ class ActivesViewController: UIViewController {
     
     func refreshClick(sender:UIButton!)
     {
-        println("now refreshing")
+        if locationEnabled{
+            locationManager.startUpdatingLocation()
+        }
+        else{
+            println("Location services are not enabled")
+        }
     }
     
     func helpClick(sender:UIButton!)
@@ -56,6 +69,44 @@ class ActivesViewController: UIViewController {
     {
         performSegueWithIdentifier("segActiveToAdd", sender: self)
     }
+    
+    //LOCATION SERVICES
+    
+    func setupLocationServices()->Bool{
+        if (CLLocationManager.locationServicesEnabled()) {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager.requestWhenInUseAuthorization()
+            locationManager.startUpdatingLocation()
+            return true
+        } else {
+            println("Location services are not enabled")
+            return false
+        }
+    }
+    
+    func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
+        locationManager.stopUpdatingLocation()
+        if ((error) != nil) {
+            print(error)
+        }
+    }
+    
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        var locationArray = locations as NSArray
+        var locationObj = locationArray.lastObject as CLLocation
+        var coord = locationObj.coordinate
+        println(coord.latitude)
+        data.lat = coord.latitude
+        println(coord.longitude)
+        data.lon = coord.longitude
+        locationManager.stopUpdatingLocation()
+        var status: Bool = data.refresh()
+        if (status == false){
+            println("error: cant update network data")
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

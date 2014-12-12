@@ -26,13 +26,13 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
-	<key>UIRequiredDeviceCapabilities</key>
-	<array>
-		<string>armv7</string>
-	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>NSLocationUsageDescription</key>
+	<string>Location is used whenever the user hits the refresh button to get posts in their area and allow their posts to be viewed by other people in their area</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Location is used whenever the user hits the refresh button to get posts in their area and allow their posts to be viewed by other people in their area</string>
 </dict>
 </plist>

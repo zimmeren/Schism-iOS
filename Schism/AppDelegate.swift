@@ -52,18 +52,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
         
-        //update GPS location
-        var status1: Bool = data.updatePosition()
-        if status1 == false{
-            println("ERROR: GPS Location not updated")
-        }
-        
-        //Get all network data
-        var status2: Bool = data.refresh()
-        if status2 == false{
-            println("ERROR: Data Not Loaded")
-        }
-        
         return true
     }
 

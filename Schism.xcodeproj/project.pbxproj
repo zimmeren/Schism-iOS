@@ -10,6 +10,7 @@
 		4C51F6271A3AA1030007DF1E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C51F6261A3AA1030007DF1E /* icon.png */; };
 		4C51F6291A3AA5F80007DF1E /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C51F6281A3AA5F80007DF1E /* data.swift */; };
 		4C51F62B1A3AA6180007DF1E /* network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C51F62A1A3AA6180007DF1E /* network.swift */; };
+		4C51F62D1A3AC44C0007DF1E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C51F62C1A3AC44B0007DF1E /* CoreLocation.framework */; };
 		4C8CE8661A3A6A6F00377DD2 /* SchismLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8CE8651A3A6A6F00377DD2 /* SchismLib.swift */; };
 		4CD0DA0B1A3A3E3200FCEF43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0DA0A1A3A3E3200FCEF43 /* AppDelegate.swift */; };
 		4CD0DA0D1A3A3E3200FCEF43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0DA0C1A3A3E3200FCEF43 /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 		4C51F6261A3AA1030007DF1E /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		4C51F6281A3AA5F80007DF1E /* data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
 		4C51F62A1A3AA6180007DF1E /* network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = network.swift; sourceTree = "<group>"; };
+		4C51F62C1A3AC44B0007DF1E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		4C8CE8651A3A6A6F00377DD2 /* SchismLib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchismLib.swift; sourceTree = "<group>"; };
 		4CD0DA051A3A3E3100FCEF43 /* Schism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Schism.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD0DA091A3A3E3200FCEF43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C51F62D1A3AC44C0007DF1E /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +88,7 @@
 		4CD0D9FC1A3A3E2F00FCEF43 = {
 			isa = PBXGroup;
 			children = (
+				4C51F62C1A3AC44B0007DF1E /* CoreLocation.framework */,
 				4CD0DA071A3A3E3100FCEF43 /* Schism */,
 				4CD0DA1D1A3A3E3300FCEF43 /* SchismTests */,
 				4CD0DA061A3A3E3100FCEF43 /* Products */,

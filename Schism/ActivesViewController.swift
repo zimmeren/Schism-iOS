@@ -1,4 +1,4 @@
-//
+
 //  ActivesViewController.swift
 //  Schism
 //
@@ -9,7 +9,10 @@
 import UIKit
 import CoreLocation
 
-class ActivesViewController: UIViewController, CLLocationManagerDelegate {
+class ActivesViewController: UIViewController, CLLocationManagerDelegate,UITableViewDataSource,UITableViewDelegate {
+    
+    
+    @IBOutlet weak var tableView: UITableView!
     
     let locationManager = CLLocationManager()
     var locationEnabled = false
@@ -105,6 +108,23 @@ class ActivesViewController: UIViewController, CLLocationManagerDelegate {
         if (status == false){
             println("error: cant update network data")
         }
+        tableView.reloadData()
+    }
+    
+    //Table Stuff
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        println("table rows : \(data.nearbyList.count)")
+        return data.nearbyList.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell:CustomCell = self.tableView.dequeueReusableCellWithIdentifier("cell") as CustomCell
+        cell.label1.text = data.nearbyList[indexPath.row].leftString
+        cell.label2.text = data.nearbyList[indexPath.row].rightString
+        cell.creator.hidden = !data.nearbyList[indexPath.row].creator
+        cell.initBars(data.nearbyList[indexPath.row].wager, id: data.nearbyList[indexPath.row].id)
+        return cell
     }
     
     /*

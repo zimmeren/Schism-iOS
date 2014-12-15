@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C2804831A3B81310073655C /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2804821A3B81310073655C /* CustomCell.swift */; };
 		4C51F6271A3AA1030007DF1E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C51F6261A3AA1030007DF1E /* icon.png */; };
 		4C51F6291A3AA5F80007DF1E /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C51F6281A3AA5F80007DF1E /* data.swift */; };
 		4C51F62B1A3AA6180007DF1E /* network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C51F62A1A3AA6180007DF1E /* network.swift */; };
@@ -15,7 +16,6 @@
 		4CD0DA0B1A3A3E3200FCEF43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0DA0A1A3A3E3200FCEF43 /* AppDelegate.swift */; };
 		4CD0DA0D1A3A3E3200FCEF43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0DA0C1A3A3E3200FCEF43 /* ViewController.swift */; };
 		4CD0DA101A3A3E3200FCEF43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD0DA0E1A3A3E3200FCEF43 /* Main.storyboard */; };
-		4CD0DA121A3A3E3200FCEF43 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD0DA111A3A3E3200FCEF43 /* Images.xcassets */; };
 		4CD0DA151A3A3E3200FCEF43 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CD0DA131A3A3E3200FCEF43 /* LaunchScreen.xib */; };
 		4CD0DA211A3A3E3300FCEF43 /* SchismTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0DA201A3A3E3300FCEF43 /* SchismTests.swift */; };
 		4CD0DA2B1A3A55EC00FCEF43 /* ActivesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0DA2A1A3A55EB00FCEF43 /* ActivesViewController.swift */; };
@@ -23,6 +23,8 @@
 		4CD0DA2F1A3A561500FCEF43 /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0DA2E1A3A561500FCEF43 /* StatsViewController.swift */; };
 		4CD0DA311A3A562E00FCEF43 /* NewSchismViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0DA301A3A562E00FCEF43 /* NewSchismViewController.swift */; };
 		4CD0DA331A3A563C00FCEF43 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0DA321A3A563C00FCEF43 /* HelpViewController.swift */; };
+		4CD85BDB1A3BA54C00AE2368 /* CustomCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD85BDA1A3BA54C00AE2368 /* CustomCell1.swift */; };
+		4CD85BDF1A3BB9A800AE2368 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD85BDE1A3BB9A800AE2368 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C2804821A3B81310073655C /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		4C51F6261A3AA1030007DF1E /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		4C51F6281A3AA5F80007DF1E /* data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
 		4C51F62A1A3AA6180007DF1E /* network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = network.swift; sourceTree = "<group>"; };
@@ -46,7 +49,6 @@
 		4CD0DA0A1A3A3E3200FCEF43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CD0DA0C1A3A3E3200FCEF43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4CD0DA0F1A3A3E3200FCEF43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4CD0DA111A3A3E3200FCEF43 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4CD0DA141A3A3E3200FCEF43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4CD0DA1A1A3A3E3300FCEF43 /* SchismTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchismTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD0DA1F1A3A3E3300FCEF43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +58,8 @@
 		4CD0DA2E1A3A561500FCEF43 /* StatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
 		4CD0DA301A3A562E00FCEF43 /* NewSchismViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSchismViewController.swift; sourceTree = "<group>"; };
 		4CD0DA321A3A563C00FCEF43 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		4CD85BDA1A3BA54C00AE2368 /* CustomCell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell1.swift; sourceTree = "<group>"; };
+		4CD85BDE1A3BB9A800AE2368 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 			children = (
 				4CD0DA0A1A3A3E3200FCEF43 /* AppDelegate.swift */,
 				4C8CE8651A3A6A6F00377DD2 /* SchismLib.swift */,
+				4C2804821A3B81310073655C /* CustomCell.swift */,
+				4CD85BDA1A3BA54C00AE2368 /* CustomCell1.swift */,
 				4CD0DA0C1A3A3E3200FCEF43 /* ViewController.swift */,
 				4CD0DA2A1A3A55EB00FCEF43 /* ActivesViewController.swift */,
 				4CD0DA2C1A3A560200FCEF43 /* ExpiredsViewController.swift */,
@@ -118,8 +124,8 @@
 				4C51F6281A3AA5F80007DF1E /* data.swift */,
 				4C51F62A1A3AA6180007DF1E /* network.swift */,
 				4CD0DA0E1A3A3E3200FCEF43 /* Main.storyboard */,
-				4CD0DA111A3A3E3200FCEF43 /* Images.xcassets */,
 				4CD0DA131A3A3E3200FCEF43 /* LaunchScreen.xib */,
+				4CD85BDE1A3BB9A800AE2368 /* Images.xcassets */,
 				4C51F6231A3AA0390007DF1E /* Images */,
 				4CD0DA081A3A3E3200FCEF43 /* Supporting Files */,
 			);
@@ -200,6 +206,7 @@
 				TargetAttributes = {
 					4CD0DA041A3A3E3100FCEF43 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = R7XA8U6GYF;
 					};
 					4CD0DA191A3A3E3300FCEF43 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -232,9 +239,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C51F6271A3AA1030007DF1E /* icon.png in Resources */,
+				4CD85BDF1A3BB9A800AE2368 /* Images.xcassets in Resources */,
 				4CD0DA101A3A3E3200FCEF43 /* Main.storyboard in Resources */,
 				4CD0DA151A3A3E3200FCEF43 /* LaunchScreen.xib in Resources */,
-				4CD0DA121A3A3E3200FCEF43 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,8 +259,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CD85BDB1A3BA54C00AE2368 /* CustomCell1.swift in Sources */,
 				4C8CE8661A3A6A6F00377DD2 /* SchismLib.swift in Sources */,
 				4CD0DA331A3A563C00FCEF43 /* HelpViewController.swift in Sources */,
+				4C2804831A3B81310073655C /* CustomCell.swift in Sources */,
 				4C51F62B1A3AA6180007DF1E /* network.swift in Sources */,
 				4CD0DA0D1A3A3E3200FCEF43 /* ViewController.swift in Sources */,
 				4CD0DA0B1A3A3E3200FCEF43 /* AppDelegate.swift in Sources */,
@@ -384,9 +393,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Schism/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -394,9 +406,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Schism/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
